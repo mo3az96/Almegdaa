@@ -1,22 +1,26 @@
 body {
     position: relative;
-    font-family: Frutiger;
-    overflow: hidden;
+    font-family: tajwal;
+    height: 5000px;
 
     &::-webkit-scrollbar {
-        background-color: rgba(#859fc7, 0.5);
+        background-color: rgba(#fff7cb, 0.5);
         width: 7px;
         height: 0px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: #ce9b2f;
+        background-color: rgba(#7b331f, 0.75);
+
+        &:hover {
+            background-color: rgba(#7b331f, 1);
+        }
     }
 }
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: #ce9b2f rgba(#859fc7, 0.5);
+    scrollbar-color: rgba(#7b331f, 0.75) rgba(#fff7cb, 0.5);
 }
 
 .overflow {
