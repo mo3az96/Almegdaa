@@ -1,0 +1,111 @@
+#{$ltr} {
+    .top-bar-cont {
+        .top-link {
+            margin-right: 19px;
+            margin-left: 0;
+        }
+
+        .top-social-link {
+            margin-right: 20px;
+            margin-left: 0;
+
+            &:last-of-type {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .top-social {
+            margin-right: 30px;
+            margin-left: 0;
+        }
+
+        .lang {
+            span {
+                margin-right: 8px;
+                margin-left: 0;
+            }
+
+            @include xs {
+                right: auto;
+                left: 25px;
+            }
+        }
+    }
+
+    .mo-user-nav {
+
+        .user-anchor {
+            margin-right: 0;
+            margin-left: 24px;
+
+            .mo-text {
+                margin-right: 0;
+                margin-left: 7px;
+            }
+
+            .items {
+                right: auto;
+                left: 13px;
+            }
+        }
+
+        .mo-log-icon {
+            .mo-text {
+
+                &:after {
+                    margin-left: 6px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .drop-menu {
+
+        @include xs {
+            left: auto;
+            right: 28%;
+        }
+    }
+
+    .cat {
+        margin-left: 0;
+        margin-right: 10px;
+
+        &:nth-of-type(4n) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &:hover {
+            .cat-img {
+                transform: scale(1.15) rotate(5deg);
+            }
+        }
+
+        @include xs {
+
+            &:nth-of-type(2n) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .cat-name {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .product {
+        .pro-img {
+            .add-to-tools {
+                .mo-text {
+                    margin-left: 8px;
+                    margin-right: 0;
+                }
+
+            }
+        }
+    }
+}

@@ -45,6 +45,10 @@
     }
 }
 
+#{$ltr} .search-button {
+    left: auto;
+    right: 20px;
+}
 
 .search-input {
     background-color: #fff;
@@ -78,7 +82,13 @@
     }
 }
 
+#{$ltr} .search-input {
+    text-align: left;
 
+    &::placeholder {
+        text-align: left;
+    }
+}
 
 
 //////////////news///////////////

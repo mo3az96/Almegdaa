@@ -30,6 +30,21 @@
     }
 }
 
+#{$ltr} .nav-li {
+    margin-left: 0;
+    margin-right: 25px;
+
+    &:last-of-type {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include sm {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .nav-anchor {
     font-size: 15px;
     color: $brown;
