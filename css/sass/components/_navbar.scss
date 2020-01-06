@@ -1,0 +1,51 @@
+.navbar-cont {
+    background-color: $back;
+    border-top: 1px solid #e8e1ba;
+
+    @include xs {
+        display: none;
+    }
+}
+
+.mo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+
+    @include sm {
+        justify-content: space-between;
+    }
+}
+
+.nav-li {
+    margin-left: 25px;
+
+    &:last-of-type {
+        margin-left: 0;
+    }
+
+    @include sm {
+        margin-left: 0;
+    }
+}
+
+.nav-anchor {
+    font-size: 15px;
+    color: $brown;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $gold;
+    }
+}
+
+.specials {
+    .nav-anchor {
+        color: #ff0000;
+
+        &:hover {
+            color: $brown;
+        }
+    }
+}

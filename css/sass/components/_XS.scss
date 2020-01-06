@@ -1,0 +1,63 @@
+.close-btn {
+    display: none;
+
+    @include xs {
+        display: block;
+        position: absolute;
+        top: 25px;
+        font-size: 20px;
+        cursor: pointer;
+        color: $text;
+    }
+}
+
+.navbar-cont {
+    @include xs {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgba($brown, 0.5);
+        border: none;
+        display: none;
+        opacity: 1 !important;
+
+        .mo-navbar {
+            flex-direction: column;
+            height: auto;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 70px 25px;
+        }
+
+        .nav-li {
+            margin: 5px 0;
+        }
+
+        .nav-ul-cont {
+            position: relative;
+            z-index: 99;
+            width: 280px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: $back;
+            transform-origin: right;
+            transform: scaleX(0);
+            @include transition(all 0.4s ease-in-out);
+        }
+
+        .close-btn {
+            left: 25px;
+        }
+
+        .nav-in {
+            transform: scaleX(1);
+        }
+    }
+
+
+}

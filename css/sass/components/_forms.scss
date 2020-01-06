@@ -1,0 +1,166 @@
+.search-form {
+    @include xs {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($brown, 0.9);
+        z-index: 999;
+    }
+
+    .close-btn {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+
+.search-cont {
+    position: relative;
+    height: 43px;
+    width: 292px;
+
+    @include xs {
+        width: 95%;
+        margin: 120px auto;
+    }
+}
+
+.search-button {
+    position: absolute;
+    background-color: transparent;
+    color: $brown;
+    left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    font-size: 16px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $gold;
+    }
+}
+
+
+.search-input {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0 27px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: right;
+    color: $brown;
+    @include transition(all 0.3s ease-in-out);
+
+    border: 2px solid transparent;
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+
+    &:hover {
+        border: 2px solid transparent;
+    }
+
+    &:focus {
+        border: 2px solid $gold;
+
+        &:hover {
+            border: 2px solid $gold;
+        }
+    }
+}
+
+
+
+
+//////////////news///////////////
+
+.newsletter-cont {
+    position: relative;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 34px;
+    font-size: 14px;
+    text-align: right;
+    color: $brown;
+    border: 1px solid #ebebeb;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+    }
+
+    &:hover {
+        border: 1px solid #ebebeb;
+    }
+
+    &:focus {
+        border: 1px solid $gold;
+
+        &:hover {
+            border: 1px solid $gold;
+        }
+    }
+
+
+}
+
+#{$ltr} .newsletter-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
+.newsletter-button {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $gold;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $brown;
+    }
+
+    &:after {
+        content: "\e879";
+        font-family: 'Linearicons-Free';
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+#{$ltr} .newsletter-button {
+    left: auto;
+    right: 7px;
+
+    &:after {
+        content: "\e87a";
+    }
+}
