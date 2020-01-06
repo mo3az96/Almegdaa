@@ -1087,17 +1087,15 @@ html[dir=ltr] .newsletter-button:after {
 .banner-cont {
   margin-top: 70px;
   overflow: hidden;
-  backface-visibility: hidden;
 }
 .banner-cont .banner {
   overflow: hidden;
   width: 100%;
-  backface-visibility: hidden;
   display: flex;
 }
 .banner-cont .banner img {
-  backface-visibility: hidden;
   width: 100%;
+  max-height: 100%;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
